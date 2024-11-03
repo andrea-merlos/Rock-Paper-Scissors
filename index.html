@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <title>Rock-Paper-Scissors</title>
+</head>
+<body>
+    <div class="container"></div>
+        <h1>ROCK-PAPER-SCISSORS</h1>
+        <div class="header">
+        </div>
+        <!-- ************************************************** Player options displayed as buttons and images added *********** -->
+        <div class="choice">
+            <button onclick="playGame('rock')">
+                <img src="images/rock.png">
+            </button>
+            <button onclick="playGame('paper')">
+                <img src="images/paper.png">
+            </button>
+            <button onclick="playGame('scissors')">
+                <img src="images/scissor.png">
+            </button>
+        </div>
+        <!-- ******************************** Ids for js to refer to for score displaying  and  randomizing  choices ************* -->
+        <div id="playerDisplay">Player: </div>
+        <div id="robotDisplay">Robot: </div>
+        <div id="resultDisplay"></div>
+        <div class="scoreDisplay">Player Score:
+            <span id="playerScoreDisplay">0</span>
+        </div>
+        <div class="scoreDisplay">Robot Score:
+            <span id="robotScoreDisplay">0</span>
+        </div>
+        <!--***************************************************** reset button to restart score ************************************ -->
+        <div class="reset">
+            <button onclick="window.location.reload();">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

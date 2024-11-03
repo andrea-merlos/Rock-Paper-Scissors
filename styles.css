@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(images/background999999.jpg);
+  background-size: 1800px;
+}
+h1 {
+  font-size: 3.5rem;
+  color: black;
+  margin: 5%;
+  padding: 50px;
+  border-bottom: 0dvh;
+}
+
+.choice {
+  margin-bottom: 30px;
+}
+.choice button {
+  font-size: 7.5rem;
+  min-width: 160px;
+  margin: 0 10px;
+  border-radius: 250px;
+  background-color: rgb(235, 219, 225);
+  cursor: pointer;
+  transition: background-color 0.52;
+}
+.choice button:hover {
+  background-color: rgb(190, 48, 102);
+}
+
+#playerDisplay,
+#robotDisplay {
+  font-size: 2.5rem;
+  color: rgb(11, 11, 11);
+}
+
+#resultDisplay {
+  font-size: 5rem;
+  margin: 30px 0;
+  /* color: aliceblue; */
+}
+
+.choice img {
+  width: 100px;
+}
+.scoreDisplay {
+  font-size: 2rem;
+  color: rgb(6, 6, 6);
+  padding-bottom: 1rem;
+}
+
+.reset button {
+  font-size: 16px;
+  cursor: pointer;
+  color: rgb(13, 13, 13);
+  font-size: larger;
+  border-radius: 6rem;
+  padding: 15px 20px;
+  background: linear-gradient(to right, rgb(214, 36, 98), rgb(222, 244, 155));
+}
+.reset button:hover {
+  color: rgb(245, 240, 240);
+  background: linear-gradient(
+    to right,
+    rgba(37, 4, 24, 0.069),
+    rgb(224, 55, 123)
+  );
+}
+
+.greenText,
+#playerScoreDisplay {
+  color: rgba(33, 233, 46, 0.635);
+}
+.redText,
+#robotScoreDisplay {
+  color: red;
+}
+.tieText {
+  color: rgb(35, 3, 23);
+}
+/************** responsive for whole page  *****************************/
+@media only screen and (max-width: 868px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .choice button {
+    border-radius: 100px;
+    margin: 0 7px;
+    font-size: 3.5rem;
+    min-width: 17px;
+  }
+  .choice img {
+    width: 70px;
+  }
+}
+
+@media only screen and (max-width: 548px) {
+  h1 {
+    font-size: 1rem;
+  }
+  #resultDisplay {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  h1 {
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
